@@ -1,11 +1,11 @@
-resource "aws_s3_bucket" “s3test” {  
+resource "aws_s3_bucket" "s3test" {  
   bucket_prefix = var.bucket_prefix  
   acl    = “var.access”   
   tags = var.tags
  
 }
 
-resource "aws_s3_bucket_policy" “s3policy {
+resource "aws_s3_bucket_policy" "s3policy" {
   bucket = aws_s3_bucket.s3test.id
 
 policy = <<POLICY
