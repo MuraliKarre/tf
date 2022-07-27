@@ -17,8 +17,8 @@ policy = <<POLICY
           "Effect": "Allow",            
           "Principal": "*",            
           "Action": [                
-             "s3:GetObject”
-             "s3:PutObject", 
+             "s3:GetObject”,
+             "s3:PutObject"
           ],            
           "Resource": [
              "arn:aws:s3:::${aws_s3_bucket.s3test.id}/*"            
